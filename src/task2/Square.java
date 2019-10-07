@@ -7,12 +7,12 @@ public class Square {
         this.side = side;
     }
 
-    public double squareArea(Square square) {
-        return Math.pow(square.side, 2);
+    public double squareArea(double side) {
+        return Math.pow(side, 2);
     }
 
     public void showSquareArea() {
-        double area = squareArea(this);
-        System.out.println("Pole kwadratu wynosi o boku " + this.side + " wynosi: " + area);
+        double area = squareArea(side);
+        System.out.println("Pole kwadratu wynosi o boku " + side + " wynosi: " + area);
     }
 }

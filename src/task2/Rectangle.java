@@ -9,12 +9,12 @@ public class Rectangle {
         this.sideB = sideB;
     }
 
-    public double rectPerimeter(Rectangle rectangle) {
-        return (2 * rectangle.sideA + 2 * rectangle.sideB);
+    public double rectPerimeter(double sideA, double sideB) {
+        return (2 * sideA + 2 * sideB);
     }
 
     public void showRectanglePerimeter() {
-        double perimeter = rectPerimeter(this);
-        System.out.println("Obwód prostokąta o bokach " + this.sideA + " i " + this.sideB + " wynosi: " + perimeter);
+        double perimeter = rectPerimeter(sideA,sideB);
+        System.out.println("Obwód prostokąta o bokach " + sideA + " i " + sideB + " wynosi: " + perimeter);
     }
 }
