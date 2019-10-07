@@ -11,14 +11,14 @@ public class Televisor {
     }
 
     public void turnOn() {
-        this.isTurnedOn = true;
+        isTurnedOn = true;
     }
 
     public void turnOff() {
-        this.isTurnedOn = false;
+        isTurnedOn = false;
     }
 
     public void showStatus() {
-        System.out.println("Telewizor jest włączony: (" + this.isTurnedOn + ")");
+        System.out.println("Telewizor jest włączony: (" + isTurnedOn + ")");
     }
 }
