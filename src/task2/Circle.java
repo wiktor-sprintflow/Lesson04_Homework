@@ -7,10 +7,12 @@ public class Circle {
         this.radius = radius;
     }
 
-    ShapeCalculator shapeCalculator = new ShapeCalculator();
+    public double circleArea(Circle circle) {
+        return Math.PI * Math.pow(circle.radius, 2);
+    }
 
     public void showCircleArea() {
-        double area = shapeCalculator.circleArea(this);
+        double area = circleArea(this);
         System.out.println("Pole okręgu o promieniu " + this.radius + " wynosi: " + area);
     }
 }

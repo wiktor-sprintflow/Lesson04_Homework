@@ -11,7 +11,9 @@ public class Triangle {
         this.sideC = sideC;
     }
 
-    ShapeCalculator shapeCalculator = new ShapeCalculator();
+    public double trianglePerimeter(Triangle triangle) {
+        return triangle.sideA + triangle.sideB + triangle.sideC;
+    }
 
     private boolean areTriangleSidesCorrect(Triangle triangle) {
         boolean areCorrect = (triangle.sideA + triangle.sideB > triangle.sideC &&
@@ -22,7 +24,7 @@ public class Triangle {
 
     public void showTrianglePerimeter() {
         if (areTriangleSidesCorrect(this)) {
-            double perimeter = shapeCalculator.trianglePerimeter(this);
+            double perimeter = trianglePerimeter(this);
             System.out.println("Obwód trójkąta o bokach " + this.sideA + ", " + this.sideB + " i " + this.sideC + " wynosi: " + perimeter);
         } else {
             System.out.println("Nie można utworzyć trójkąta o bokach: " + this.sideA + ", " + this.sideB + " i " + this.sideC);
